@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Threading;
-using System.Threading.Tasks;
+using System.Diagnostics;               //for stopwatch
+using System.Threading;                 //for parallel loop
+using System.Threading.Tasks;           //for parallel loop
 using System.Globalization;
 using System.Collections.Generic;       //for list
 using System.Collections;               //for list
-using System.Linq;
+using System.Linq;                      //for list
 
 namespace ConsoleApp1
 {
@@ -41,9 +41,9 @@ namespace ConsoleApp1
             //***************************  SWITCH CASE ********************************
             //-------------------------------------------------------------------------
             //Console.WriteLine("Enter user name");
-            //string uname = Console.ReadLine();
-            //uname = uname.ToLower();
-            //if (uname == "admin")
+            //string usname = Console.ReadLine();
+            //usname = usname.ToLower();
+            //if (usname == "admin")
             //{
             //    Console.WriteLine("Enter PAssword");
             //    int pass = int.Parse(Console.ReadLine());
@@ -62,75 +62,79 @@ namespace ConsoleApp1
             //    }
 
 
-            //--------------------------------------------------------------------------
-            //************************  FOR LOOP ***************************************
-            //--------------------------------------------------------------------------
+                //--------------------------------------------------------------------------
+                //************************  FOR LOOP ***************************************
+                //--------------------------------------------------------------------------
 
-            //Console.WriteLine("Enter user name");
-            //string uname = Console.ReadLine();
-            //if (uname == "admin")
-            //{
-            //    Console.WriteLine("enter your password");
-            //    int pasword = int.Parse(Console.ReadLine());
-            //    if (pasword == 123)
-            //    {
-            //        Console.WriteLine("Login successfully");
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("you enter wrong password");
-            //    }
+                //Console.WriteLine("Enter user name");
+                //string uname = Console.ReadLine();
+                //if (uname == "admin")
+                //{
+                //    Console.WriteLine("enter your password");
+                //    int pasword = int.Parse(Console.ReadLine());
+                //    if (pasword == 123)
+                //    {
+                //        Console.WriteLine("Login successfully");
+                //    }
+                //    else
+                //    {
+                //        Console.WriteLine("you enter wrong password");
+                //    }
+
+                //}
+                //else
+                //{
+                //    Console.WriteLine("wrong user name");
+                //}
+
+                //----------------------------------------------------------------------------
+                // *******************parallel for loop***************************************
+                //----------------------------------------------------------------------------
+
+                //Stopwatch swach = new Stopwatch();
+                //System.Diagnostics.Stopwatch stopwatch = new Stopwatch();
+                //stopwatch.Start();
+                //for (int i = 1; i < 12; i++)
+                //{
+                //    Thread.Sleep(5000);
+                //}
+                //stopwatch.Stop();
+                //long time = stopwatch.ElapsedMilliseconds / 1000;
+                //Console.WriteLine(time);
+                //stopwatch.Reset();
+                //stopwatch.Start();
+                //Parallel.For(1, 12, i =>
+                //{
+                //    Thread.Sleep(5000);
+                //});
+                //stopwatch.Stop();
+                //long time2 = stopwatch.ElapsedMilliseconds / 1000;
+                //Console.WriteLine(time2);
+
+
+
+                //----------------------------------------------------------------
+                //*******************loops****************************************
+                //----------------------------------------------------------------
+                //Console.WriteLine("enter any number");
+                //int j = int.Parse(Console.ReadLine());
+                //for (int i = 1; i <= 10; i++)
+                //{
+                //    Console.WriteLine(i * j);
+                //}
+                //int k = 0;
+                //do
+                //{
+                //    Console.WriteLine(k);
+                //    k++;
+
+                //} while (k < 3);
 
             //}
-            //else
-            //{
-            //    Console.WriteLine("wrong user name");
-            //}
-
-            //----------------------------------------------------------------------------
-            // *******************parallel for loop***************************************
-            //----------------------------------------------------------------------------
-
-            //Stopwatch swach = new Stopwatch();
-            //swack.Start;
-            //System.Diagnostics.Stopwatch stopwatch = new Stopwatch();
-            //stopwatch.Start();
-            //for (int i = 1; i < 12; i++)
-            //{
-            //    Thread.Sleep(5000);
-            //}
-            //stopwatch.Stop();
-            //long time = stopwatch.ElapsedMilliseconds / 1000;
-            //Console.WriteLine(time);
-            //stopwatch.Reset();
-            //stopwatch.Start();
-            //Parallel.For(1, 12, i =>
-            //{
-            //    Thread.Sleep(5000);
-            //});
-            //stopwatch.Stop();
-            //long time2 = stopwatch.ElapsedMilliseconds / 1000;
-            //Console.WriteLine(time2);
 
 
 
-            //----------------------------------------------------------------
-            //*******************loops****************************************
-            //----------------------------------------------------------------
-            //Console.WriteLine("enter any number");
-            //int n = int.Parse(Console.ReadLine());
-            //for (int i = 1; i <= 10; i++)
-            //{
-            //    Console.WriteLine(i*n);
-            //}
-            //int n=0;
-            //do
-            //{
-            //    Console.WriteLine(n);
-            //    n++;
-
-            //} while (n<3);
-
+            //end of main function
         }
     }
 }
